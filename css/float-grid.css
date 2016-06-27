@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Grid measurements:
+ *
+ *   960px wide including 12 gutters (half gutters on both edges)
+ *
+ *   60px columns (12)
+ *   20px gutters (two half-gutters + 11 full gutters, so 12 total)
+ *
+ **/
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.grid::before,
+.grid::after {
+  display: table;
+  content: '';
+}
+
+.col-3, .col-4, .col-6 {
+  float: left;
+
+  /* Gutters:
+   * Each column is padded by half-a-gutter on each side,
+   *
+   * Half a gutter is 10px, 10/960 (context) = 1.041666%
+   *
+   */
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.test-box {
+  background-color: #4ac;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.test-box-green {
+  background-color: #ac4;
+}
