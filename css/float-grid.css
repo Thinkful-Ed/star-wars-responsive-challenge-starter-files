@@ -22,7 +22,7 @@
   content: '';
 }
 
-.col-3, .col-4, .col-6 {
+.col-3, .col-4, .col-6, .col-12 {
   float: left;
 
   /* Gutters:
@@ -47,12 +47,6 @@
   width: 50%;
 }
 
-.test-box {
-  background-color: #4ac;
-  height: 120px;
-  margin-bottom: 20px;
-}
-
-.test-box-green {
-  background-color: #ac4;
+.col-12 {
+  width: 100%;
 }
