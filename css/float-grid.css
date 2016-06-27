@@ -9,9 +9,15 @@
  *   60px columns (12)
  *   20px gutters (two half-gutters + 11 full gutters, so 12 total)
  *
+ *
+ *   For smaller screens, we always want 20px of padding on either side,
+ *   so 960 + 20 + 20 => 1000px
+ *
  **/
 .grid {
-  max-width: 960px;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -20,6 +26,10 @@
 .grid::after {
   display: table;
   content: '';
+}
+
+.grid::after {
+  clear: both;
 }
 
 .col-3, .col-4, .col-6, .col-12 {
