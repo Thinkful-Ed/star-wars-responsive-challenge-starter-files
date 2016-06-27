@@ -45,18 +45,27 @@
   padding-right: 1.04166666%;
 }
 
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.333333%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-12 {
+/* Mobile defaults */
+.col-3, .col-4, .col-6, .col-12 {
   width: 100%;
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.333333%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
 }
