@@ -14,7 +14,7 @@
  *   so 960 + 20 + 20 => 1000px
  *
  **/
-.grid {
+.row {
   max-width: 1000px;
   padding-left: 20px;
   padding-right: 20px;
@@ -22,13 +22,13 @@
 }
 
 /* Clearfix */
-.grid::before,
-.grid::after {
+.row::before,
+.row::after {
   display: table;
   content: '';
 }
 
-.grid::after {
+.row::after {
   clear: both;
 }
 
